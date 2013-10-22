@@ -6,6 +6,10 @@ Rémi Pourtier:
 remi.pourtier@gmail.com
 0650473273
 
+Mayl' Mesnier (Lyameina):
+Lyameina@gmail.com
+0626529032
+
 
 Commandes principales:
 
@@ -24,4 +28,4 @@ git commit -m "Mon commentaire sur mon changement"
 AVANT CHAQUE PUSH IL FAUT PULL
 3)On push: cad on met en ligne nos modifications
 git push origin master
-
+ 

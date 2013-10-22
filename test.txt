@@ -6,10 +6,16 @@ Rémi Pourtier:
 remi.pourtier@gmail.com
 0650473273
 
+<<<<<<< HEAD
 Mayl' Mesnier (Lyameina):
 Lyameina@gmail.com
 0626529032
 
+=======
+Sébastien Pétillon :
+petillon.sebastien@gmail.com
+0699219056
+>>>>>>> 915ea1cbe23956e8c071a3b2f22b6fb5312c3842
 
 Commandes principales:
 

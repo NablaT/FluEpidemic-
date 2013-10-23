@@ -5,3 +5,26 @@ customize.org (skin rainemeter)
 Rémi Pourtier:
 remi.pourtier@gmail.com
 0650473273
+
+Sébastien Pétillon :
+petillon.sebastien@gmail.com
+0699219056
+
+Commandes principales:
+
+AVANT TOUT: 
+
+git pull origin master
+(on recupere les derniéres versions)
+
+
+1) Après avoir fait des modifications 
+git add --all (on ajoute au repository nos modifs, c'est en interne)
+
+2)On commit nos changements
+git commit -m "Mon commentaire sur mon changement"
+
+AVANT CHAQUE PUSH IL FAUT PULL
+3)On push: cad on met en ligne nos modifications
+git push origin master
+

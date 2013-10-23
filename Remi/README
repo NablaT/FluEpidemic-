@@ -1,0 +1,30 @@
+FLU epidemic
+
+Ce projet décrit la diffusion de maladies au sein d'une population. La population se trouve sur un grille. 
+Pour lancer une simulation, il suffit de lancer le main.java. Aucune initialisation n'est à faire. Une fois la simulation lancée, il suffit d'appuyer sur entrée pour faire défiler les jours. 
+La démo se fait avec un grille de taille (5,5) contenant 21 LivingBeing dont 7 atteints par un virus. 
+
+
+Informations sur le menu: 
+
+Dans une case se trouve deux lettres. La première désigne le type d'être vivant et la seconde son état de santé. 
+Pour les êtres vivants:
+
+H = Human
+D = Duck
+P = Pig
+C = Chicken
+
+Pour les états de santé: 
+
+H = Healthy : L'être vivant ne possede aucune maladie
+S = Sick : Il vient d'être contaminé par un virus. Il restera quelques jours dans l'état Sick avant de passer dans l'état Contagious.
+C = Contagious : Il vivant peut contaminé d'autres êtres vivants. Cette contamination se fait entre deux êtres vivants du même type ou avec un humain. L'être vivant sortira de cet état après quelques jours pour rentrer dans l'état Recovering.
+R = Recording : Si l'être vivant est un animal, alors il redeviendra Healthy. Si c'est un humain, il a une petite probabilité de succomber de ce virus. Si il ne meurt pas, son état redevient Healthy.
+D = Dead : Etat qui ne touche que les humains. Une fois l'humain mort, il ne peut plus être contaminé ni revenir dans l'état Healthy. 
+
+
+Si les êtres vivants sont tous dans l'état Dead ou Healthy, il n'y aura plus de changements. 
+
+Pour plus d'informations sur les classes, veuillez vous en référez à la javadoc. 
+

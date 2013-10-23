@@ -3,12 +3,19 @@ customize.org (skin rainemeter)
 
 
 Rémi Pourtier:
-remi.pourtier@gmail.com
+remi.pourtier@gmail.com 
 0650473273
 
+<<<<<<< HEAD
+Mayl' Mesnier (Lyameina):
+Lyameina@gmail.com
+0626529032
+
+=======
 Sébastien Pétillon :
 petillon.sebastien@gmail.com
 0699219056
+>>>>>>> 915ea1cbe23956e8c071a3b2f22b6fb5312c3842
 
 Commandes principales:
 
@@ -27,4 +34,4 @@ git commit -m "Mon commentaire sur mon changement"
 AVANT CHAQUE PUSH IL FAUT PULL
 3)On push: cad on met en ligne nos modifications
 git push origin master
-
+ 

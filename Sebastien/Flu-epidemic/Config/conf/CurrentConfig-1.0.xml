@@ -1,0 +1,34 @@
+<map>
+  <entry>
+    <string>INFECTION_BIRD_RATE</string>
+    <int>25</int>
+  </entry>
+  <entry>
+    <string>INFECTION_PIG_RATE</string>
+    <int>18</int>
+  </entry>
+  <entry>
+    <string>BIRD_RATE</string>
+    <int>20</int>
+  </entry>
+  <entry>
+    <string>DAY_TIME_IN_MILI</string>
+    <int>50</int>
+  </entry>
+  <entry>
+    <string>PIG_RATE</string>
+    <int>20</int>
+  </entry>
+  <entry>
+    <string>CELL_RATE</string>
+    <int>60</int>
+  </entry>
+  <entry>
+    <string>STOP_SIMULATION</string>
+    <string>stop</string>
+  </entry>
+  <entry>
+    <string>AUTOMATIC_PLAY</string>
+    <boolean>false</boolean>
+  </entry>
+</map>

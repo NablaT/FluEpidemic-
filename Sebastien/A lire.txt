@@ -1,0 +1,8 @@
+Améliorations faites :
+- passage des configurations en XML
+- chargement d'une carte prédéfinie en XML (aide pour les tests) -> voir Launcher2
+
+Améliorations envisageables :
+
+- Tests unitaires pour les méthodes ne contenant pas de random (dans le cas de taux d'infection, on peut pour les tests les passer à 100)
+- Javadoc

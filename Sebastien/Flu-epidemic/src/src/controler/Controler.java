@@ -2,19 +2,11 @@ package src.controler;
 
 import java.awt.Dimension;
 import java.util.HashMap;
-import java.util.Random;
 import java.util.Scanner;
 
 import javax.naming.directory.InvalidAttributesException;
 
-import src.model.Virus.H1N1;
-import src.model.Virus.H5N1;
-import src.model.animals.Animal;
-import src.model.animals.Bird;
-import src.model.animals.Human;
-import src.model.animals.Pig;
 import src.model.engine.Model;
-import src.util.AutomaticConf;
 import src.util.Configurations;
 import src.view.Displayer;
 
@@ -32,16 +24,15 @@ public class Controler {
 
 		// Load the configurations
 		Configurations c = new Configurations(conf);
-		
+
 		// Check the validity of the given grid size
 		if(x < 1){x = 5;}
 		if(y < 1){y = 5;}
 
 		// Create the model and set the grid
-		try {
-			model = new Model(x, y);
-			model.setAnimals(model.getGeneratedMap(x, y));
-		} catch (InvalidAttributesException e) {}
+
+		model = new Model(x, y);
+		model.setAnimals(model.getGeneratedMap(x, y));
 
 		// Create the view
 		view = new Displayer();
@@ -51,7 +42,34 @@ public class Controler {
 		game.run();
 	}
 
-	
+	public Controler(HashMap mapDescription, HashMap conf) throws Throwable{
+
+		// Load the configurations
+		Configurations c = new Configurations(conf);
+		
+		if(mapDescription.get("dimensions") == null 
+				|| !(mapDescription.get("dimensions") instanceof Dimension)){
+			throw new Throwable("Invalid description : incorrect dimensions");
+		}
+		if(mapDescription.get("animals") == null 
+				|| !(mapDescription.get("animals") instanceof HashMap)){
+			throw new Throwable("Invalid description : incorrect dimensions");
+		}
+
+		Dimension d = (Dimension) mapDescription.get("dimensions");
+		HashMap animals = (HashMap) mapDescription.get("animals");
+		model = new Model(d.width, d.height);
+		model.setAnimals(animals);
+
+		// Create the view
+		view = new Displayer();
+
+		// Run simulation
+		game = new Simulation();
+		game.run();
+	}
+
+
 	private class Simulation implements Runnable{
 
 		String prompt;
@@ -76,7 +94,7 @@ public class Controler {
 					Scanner scan = new Scanner(System.in);
 					// If asked, stop
 					if(scan.nextLine().equals(Configurations.getInstance().STOP_SIMULATION)){break;}
-					
+
 				}
 				// Update model state
 				model.next();

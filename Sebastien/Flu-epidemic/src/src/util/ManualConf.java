@@ -34,7 +34,7 @@ public class ManualConf {
 		configuration.put("DAY_TIME_IN_MILI", 50);
 		configuration.put("STOP_SIMULATION", "stop");
 		
-		Config.store(configuration, "conf/ManualConf", "1.0");
+		ConfigXML.store(configuration, "conf/ManualConf", "1.0");
 	}
 	
 	

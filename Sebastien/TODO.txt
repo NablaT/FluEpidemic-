@@ -1,5 +1,0 @@
-Améliorations envisageables :
-
-- Tests unitaires pour les méthodes ne contenant pas de random.
-- Javadoc
-- Le chargement d'une carte prédéfinie

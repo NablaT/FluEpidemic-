@@ -34,7 +34,7 @@ public class AutomaticConf2 {
 		configuration.put("DAY_TIME_IN_MILI", 100);
 		configuration.put("STOP_SIMULATION", "stop");
 		
-		Config.store(configuration, "conf/AutomaticConf", "2.0");
+		ConfigXML.store(configuration, "conf/AutomaticConf", "2.0");
 	}
 	
 	

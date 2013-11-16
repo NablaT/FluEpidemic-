@@ -4,8 +4,8 @@ Les JUnits qui ne sont pas encore fait:
 
 H1N1
 LivingBeing
-GridForADay
-PieceOfDisplay
+GridForADay -> Fait dans le dossier Remi
+PieceOfDisplay -> Fait dans le dossier Remi
 PrintGrid
 
 ///////

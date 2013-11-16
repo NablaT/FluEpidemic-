@@ -1,0 +1,10 @@
+Voici le lien du dashboard (tableau avec les tâches à faire):
+
+https://atlas.polytech.unice.fr/jira/secure/RapidBoard.jspa?rapidView=30&selectedIssue=SITPPMP-1
+
+Vous devez avoir reçu un mail de Sebastien Mosser vous décrivant comment faire votre compte.
+Une fois cette étape terminée vous pouvez avoir accès au dashboard. 
+
+Si vous voulez créer une tâche vous faites: Create Issue (en haut de la page)
+Si vous voulez faire une tâche qui est déjà créer, vous devez vous l'assignez (vous cliquez sur la tâche et vous modifier le nom de celui qui fait la tâche).
+Ensuite vous la passez dans In Progress quand vous travaillez sur cette tâche et vous la passez dans Done une fois terminée. 

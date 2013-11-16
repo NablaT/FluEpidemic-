@@ -8,6 +8,9 @@ GridForADay -> Fait dans le dossier Remi
 PieceOfDisplay -> Fait dans le dossier Remi
 PrintGrid
 
+Verifications utilité des accesseurs de LivingBeings 
+	-> Fait dans le dossier Final, la classe se voit retirée les getters et setters inutilisés, et n'utilise plus les getters de façon interne
+
 ///////
 
 

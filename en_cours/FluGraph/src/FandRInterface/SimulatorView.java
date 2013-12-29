@@ -1,9 +1,20 @@
 package FandRInterface;
 
-import java.awt.*;
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+import Living.LivingBeing;
+import Living.LivingState;
 
 /**
  * A graphical view of the simulation grid. The view displays a colored
@@ -27,7 +38,7 @@ public class SimulatorView extends JFrame {
     private FieldView fieldView;
 
     // A map for storing colors for participants in the simulation
-    private Map<Class, Color> colors;
+    private Map<String, Color> colors;
     // A statistics object computing and storing simulation information
     private FieldStats stats;
 
@@ -67,15 +78,15 @@ public class SimulatorView extends JFrame {
      * @param color
      *            The color to be used for the given class.
      */
-    public void setColor(Class animalClass, Color color) {
-        colors.put(animalClass, color);
+    public void setColor(String livingState, Color color) {
+        colors.put(livingState, color);
     }
 
     /**
      * @return The color to be used for a given class of animal.
      */
-    private Color getColor(Class animalClass) {
-        Color col = colors.get(animalClass);
+    private Color getColor(LivingState ls) {
+        Color col = colors.get(ls.getClasse() + ls.getState());
         if (col == null) {
             // no color defined for this class
             return UNKNOWN_COLOR;
@@ -107,7 +118,7 @@ public class SimulatorView extends JFrame {
                 Object animal = field.getObjectAt(row, col);
                 if (animal != null) {
                     stats.incrementCount(animal.getClass());
-                    fieldView.drawMark(col, row, getColor(animal.getClass()));
+                    fieldView.drawMark(col, row, getColor(((LivingBeing) animal).getLivingState()));
                 } else {
                     fieldView.drawMark(col, row, EMPTY_COLOR);
                 }

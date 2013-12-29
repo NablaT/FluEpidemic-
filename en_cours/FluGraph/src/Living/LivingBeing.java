@@ -411,4 +411,8 @@ public class LivingBeing {
 		}
 		return c;
 	}
+
+	public LivingState getLivingState() {
+		return new LivingState(this.getClass(), state.toString());
+	}
 }

@@ -121,7 +121,7 @@ public class Grid {
 		LivingBeing lb = null;
 		for(int i=0; i<this.line;i++){
 			for(int j=0; j<this.column; j++){
-				lb = grid[i][j].getLB();
+				lb = grid[j][i].getLB();
 				if(lb != null){
 					f.place(lb, i, j);
 				}
